@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "fuente-tablero";
+    src: url("../fonts/led_matrix.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    background-color: rgb(44, 44, 44);
+    color: white;
+    min-height: 500px;
+    width: 80%;
+    margin: 100px auto;
+    border: 30px ridge black;
+    display: flex;
+}
+
+.col-1 {
+    flex: 3;
+}
+
+.col-2 {
+    flex: 4;
+}
+
+.marcador {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.marcador h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+.marcador h4 {
+    font-family: "fuente-tablero";
+    font-size: 150px;
+    color: red;
+    background-color: rgb(60, 0, 0);
+    padding: 10px;
+    font-weight: lighter;
+}
+
+.mt-2 {
+    margin-top: 10%;
+}
+
+#tiempo {
+    font-size: 100px;
+}

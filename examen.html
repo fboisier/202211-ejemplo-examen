@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Examen</title>
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="columna col-1">
+            <div class="marcador">
+                <h3>LOCAL</h3>
+                <h4 onclick="aumentar(this)">01</h4>
+            </div>
+            <div class="marcador">
+                <h3>FALTA</h3>
+                <h4 onclick="aumentar(this)">02</h4>
+            </div>
+        </div>
+        <div class="columna col-2">
+            <div class="marcador mt-2">
+                <h4 id="tiempo">15:00</h4>
+            </div>
+            <div class="marcador mt-2">
+                <h3>TIEMPO</h3>
+                <h4 onclick="aumentar(this, false)">1</h4>
+            </div>
+        </div>
+        <div class="columna col-1">
+            <div class="marcador">
+                <h3>VISITA</h3>
+                <h4 onclick="aumentar(this)">03</h4>
+            </div>
+            <div class="marcador">
+                <h3>FALTA</h3>
+                <h4 onclick="aumentar(this)">04</h4>
+            </div>
+        </div>
+    </div>
+
+    <input type="time" id="numero" onchange="cambio(this)">
+
+    <script src="js/base.js"></script>
+</body>
+
+</html>
